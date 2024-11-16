@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Homepage Clone | MadTube</title>
+  <!-- Linking Unicons For Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="sidebar-hidden">
+  <div class="container">
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="uil uil-bars"></i>
+          </button>
+          <a href="#" class="nav-logo">
+            <img src="images/logo.webp" alt="Logo" class="logo-image">
+            <h2 class="logo-text">MadTube</h2>
+          </a>
+        </div>
+        
+        <div class="nav-section nav-center">
+          <form action="#" class="search-form">
+            <input type="search" placeholder="Search" class="search-input" required>
+            <button class="nav-button search-button">
+              <i class="uil uil-search"></i>
+            </button>
+          </form>
+          <button class="nav-button mic-button">
+            <i class="uil uil-microphone"></i>
+          </button>
+        </div>
+        <div class="nav-section nav-right">
+          <button class="nav-button search-button">
+            <i class="uil uil-search"></i>
+          </button>
+          <button class="nav-button theme-button">
+            <i class="uil uil-moon"></i>
+          </button>
+          <section class="nav-button theme-button">
+          <i class="fa-regular fa-bell" id="noti"></i>
+        </section>
+          <img src="images/user.png" alt="User Image" class="user-image">
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Main Layout -->
+    <main class="main-layout">
+      <div class="screen-overlay"></div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="uil uil-bars"></i>
+          </button>
+          <a href="#" class="nav-logo">
+            <img src="images/logo.webp" alt="Logo" class="logo-image">
+            <h2 class="logo-text">MadTube</h2>
+          </a>
+        </div>
+  
+        <div class="links-container">
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="uil uil-estate" style="color: red;"></i> Home
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-video"></i> Shorts
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-tv-retro"></i> Subscriptions
+            </a>
+          </div>
+          <div class="section-separator"></div>
+  
+          <div class="link-section">
+            <h4 class="section-title">You</h4>
+            <a href="#" class="link-item">
+              <i class="uil uil-user-square" style="color:darkmagenta;"></i> Your channel
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-history"></i> History
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-clock"></i> Watch later
+            </a>
+          </div>
+          <div class="section-separator"></div>
+          
+          <div class="link-section">
+            <h4 class="section-title">Explore</h4>
+            <a href="#" class="link-item">
+              <i class="uil uil-fire" style="color:#FF5733;"></i> Trending
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-music"></i> Music
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-basketball"></i> Gaming
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-trophy"></i> Sports
+            </a>
+          </div>
+          <div class="section-separator"></div>
+  
+          <div class="link-section">
+            <h4 class="section-title">More from YouTube</h4>
+            <a href="#" class="link-item">
+              <i class="uil uil-shield-plus" style="color: gold;"></i> YouTube Plus
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-headphones-alt"></i> YouTube Music
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-airplay"></i> YouTube Kids
+            </a>
+          </div>
+          <div class="section-separator"></div>
+  
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="uil uil-setting" style="color:darkslategray;"></i> Settings
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-file-medical-alt"></i> Report
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-question-circle"></i> Help
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-exclamation-triangle"></i> Feedback
+            </a>
+          </div>
+        </div>
+      </aside>
+  
+      <div class="content-wrapper">
+        <!-- Category List -->
+        <div class="category-list">
+          <button class="category-button active">All</button>
+          <button class="category-button">Website</button>
+          <button class="category-button">Music</button>
+          <button class="category-button">Gaming</button>
+          <button class="category-button">Node.js</button>
+          <button class="category-button">JavaScript</button>
+          <button class="category-button">React.js</button>
+          <button class="category-button">TypeScript</button>
+          <button class="category-button">Coding</button>
+          <button class="category-button">Next.js</button>
+          <button class="category-button">Data analysis</button>
+          <button class="category-button">Web design</button>
+          <button class="category-button">HTML</button>
+          <button class="category-button">Tailwind</button>
+          <button class="category-button">CSS</button>
+          <button class="category-button">Express.js</button>
+        </div>
+        
+        <!-- Video List -->
+         <!--1 -->
+        <div class="video-list">
+          <a href="https://www.youtube.com/watch?v=MIYQR-Ybrn4&list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/MIYQR-Ybrn4/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">41:58</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/png;base64,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" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title" id="top">How To Make Weather App Using JavaScript Step By Step Explained</h2>
+                <p class="channel-name">GreatStack</p>
+                <p class="views">27K Views • 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <!--2 -->
+          <a href="https://www.youtube.com/watch?v=E3XxeE7NF30" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/E3XxeE7NF30/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">29:43</p>
+            </div>
+            <div class="video-info">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZkE6AALSSoCKWSC5JHCfBgeACdA28XsahQmsoTmfBAulI63G48qh3KW1bf5qh1ESisRc&usqp=CAU" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Learn JavaScript With This ONE Project!</h2>
+                <p class="channel-name">Tech With Tim</p>
+                <p class="views">755K Views • 1 months ago</p>
+              </div>
+            </div>
+          </a>
+          <!--3 -->
+          <a href="https://www.youtube.com/watch?v=x32x4sroZKE&list=PLSDeUiTMfxW7lm7P7GZ8qtNFffHAR5d_w&index=3" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://www.datingpro.com/wordpress/wp-content/uploads/2019/08/dynamic_landing_page.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">08:52</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/png;base64,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" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Dynamic Loading Animation: Unleash Your Creativity with CSS3</h2>
+                <p class="channel-name">HuXn WebDev</p>
+                <p class="views">18K Views • 2 year ago</p>
+              </div>
+            </div>
+          </a>
+          <!--4 -->
+          <a href="https://www.youtube.com/watch?v=I5kj-YsmWjM" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/hM8MtoNyceg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBuVxhswW8_S3fx_KUOm6k8mWzTBw" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">38:45</p>
+            </div>
+            <div class="video-info">
+              <img src="https://brocodeboutique.com/cdn/shop/files/705D71C1-9B97-4948-B402-FDCBF5BDCAE3.png?v=1697290055" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Build this JS calculator in 15 minutes! 🖩</h2>
+                <p class="channel-name">Bro Code</p>
+                <p class="views">653K Views • 11 months ago</p>
+              </div>
+            </div>
+          </a>
+          <!--5 -->
+          <a href="https://www.youtube.com/watch?v=5tC46h022YE&t=25s" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="images/cl.png" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">19:27</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/png;base64,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" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">How To Create Digital Clock Using HTML CSS & JavaScript | Display Time Using JavaScript</h2>
+                <p class="channel-name">GreatStack</p>
+                <p class="views">166K Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <!--6 -->
+          <a href="https://www.youtube.com/watch?v=ScDWrogElmo&list=PLJT9n0q3md18xl4PWqzqNFUEp9DbBmogZ" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://screenshots.codesandbox.io/5vjkp/3.png" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">16:24</p>
+            </div>
+            <div class="video-info">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxDm1aoS7sIUT34e7fOlmHUorzw3q3Y-7tZQ&s" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">React Project - Beach Resort</h2>
+                <p class="channel-name">Coding Addict</p>
+                <p class="views">362K Views • 5 years ago</p>
+              </div>
+            </div>
+          </a>
+          <!--7 -->
+          <a href="https://www.youtube.com/watch?v=q4RgxiDM6v0" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/q4RgxiDM6v0/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">37:13</p>
+            </div>
+            <div class="video-info">
+              <img src="https://yt3.googleusercontent.com/LrCNrwOMkNOpLKnRl0GgvIQOgo1mR90oXa1pjbuSRIRBT3_FMTYUbdEllsUTxt7Wq8-qPOdd=s160-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">How to make Responsive Image Slider in HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodingLab</p>
+                <p class="views">1M Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <!--8 -->
+          <a href="https://www.youtube.com/watch?v=DLs1X9T1GcY" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/DLs1X9T1GcY/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">9:27</p>
+            </div>
+            <div class="video-info">
+              <img src="https://yt3.googleusercontent.com/DRtVBjk2Noax94hHqr8yCcEjhNUhHRvyzBE3qS9WWilnE1-uQQNVnQd8mdG9h_IvNZCRApZSQw=s176-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create Text Typing Effect in HTML CSS & Vanilla JavaScript</h2>
+                <p class="channel-name">CodingNepal</p>
+                <p class="views">232K Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <!--9 -->
+          <a href="https://www.youtube.com/watch?v=j7GG009J9uc" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/j7GG009J9uc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCNZtBbO__2gTZUxoV_Txt5l7RAbQ" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">1:37:13</p>
+            </div>
+            <div class="video-info">
+              <img src="https://yt3.googleusercontent.com/LnD0yL5NAb8yvZu2d25qLZ-oAehUISz9tfe3aN36syGqTKbs4irbPeVUJfNlmVFRzel7KHV3-uo=s900-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create A Slider Crazy Effects Using HTML CSS And Javascript</h2>
+                <p class="channel-name">Lun Dev Code</p>
+                <p class="views">479K Views • 11 months ago</p>
+              </div>
+            </div>
+          </a>
+          <!--10 -->
+          <a href="https://www.youtube.com/watch?v=20Qb7pNMv-4&t=4s" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/20Qb7pNMv-4/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">12:24</p>
+            </div>
+            <div class="video-info">
+              <img src="https://yt3.googleusercontent.com/LrCNrwOMkNOpLKnRl0GgvIQOgo1mR90oXa1pjbuSRIRBT3_FMTYUbdEllsUTxt7Wq8-qPOdd=s160-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Make A Flipping Card UI Design in HTML & CSS</h2>
+                <p class="channel-name">CodingLab</p>
+                <p class="views">118K Views • 2 years ago</p>
+              </div>
+            </div>
+          </a>
+          <!--11 -->
+          <a href="https://www.youtube.com/watch?v=mkNITfM1gm8&list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9&index=9" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/mkNITfM1gm8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDFxX4pJV4e5IjD-TNCaip752cemg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">30:20</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/png;base64,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" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">How To Make Toast Notification or Snack Bar For Website Using HTML CSS JavaScript</h2>
+                <p class="channel-name">GreatStack</p>
+                <p class="views">80K Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <!--12 -->
+          <a href="https://www.youtube.com/watch?v=0_Lwi5ucGwM" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/0_Lwi5ucGwM/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">39:43</p>
+            </div>
+            <div class="video-info">
+              <img src="https://yt3.googleusercontent.com/DRtVBjk2Noax94hHqr8yCcEjhNUhHRvyzBE3qS9WWilnE1-uQQNVnQd8mdG9h_IvNZCRApZSQw=s176-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Build A Currency Converter using ReactJS</h2>
+                <p class="channel-name">CodingNepal</p>
+                <p class="views">11K • 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <!--13 -->
+          <a href="https://www.youtube.com/watch?v=g1j9rR-H1lk" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://codewithcurious.com/wp-content/uploads/2024/02/thumb-1.png.webp" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">11:13</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/png;base64,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" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title" >How To Make QR Code Generator Website Using HTML CSS And JavaScript</h2>
+                <p class="channel-name">GreatStack</p>
+                <p class="views">187K Views • 1 years ago</p>
+              </div>
+            </div>
+          </a>
+          <!--14 -->
+          <a href="https://www.youtube.com/watch?v=AyV954yKRSw" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/AyV954yKRSw/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">1:37:13</p>
+            </div>
+            <div class="video-info">
+              <img src="https://yt3.googleusercontent.com/LrCNrwOMkNOpLKnRl0GgvIQOgo1mR90oXa1pjbuSRIRBT3_FMTYUbdEllsUTxt7Wq8-qPOdd=s160-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Responsive Admin Dashboard Panel in HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodingLab</p>
+                <p class="views">171K Views • 2 year ago</p>
+              </div>
+            </div>
+          </a>
+          <!--15 -->
+          <a href="https://www.youtube.com/watch?v=PsNaoDhzQm0" target="_blank" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/PsNaoDhzQm0/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">25:27</p>
+            </div>
+            <div class="video-info">
+              <img src="https://yt3.googleusercontent.com/DRtVBjk2Noax94hHqr8yCcEjhNUhHRvyzBE3qS9WWilnE1-uQQNVnQd8mdG9h_IvNZCRApZSQw=s176-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create Responsive Image Slider in HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodingNepal</p>
+                <p class="views">177K Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Linking custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
